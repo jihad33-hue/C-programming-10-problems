@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    int i = 203, sum = 0;
+
+    while(i <= 400)   {
+        sum = sum + i;
+i += 7;
+    }
+    printf("Sum = %d", sum);
+    return 0;
+}
