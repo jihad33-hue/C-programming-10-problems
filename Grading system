@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    int marks;
+
+    printf("Enter your marks: ");
+    scanf("%d", &marks);
+
+    if (marks >= 80 && marks <= 100)
+    {
+        printf("Pass\n");
+        printf("A+");
+    }
+    else if (marks >= 75 && marks < 80)
+    {
+        printf("Pass\n");
+        printf("A");
+    }
+    else if (marks >= 70 && marks < 75)
+    {
+        printf("Pass\n");
+        printf("A-");
+    }
+    else if (marks >= 33 && marks < 70)
+    {
+        printf("Pass\n");
+        printf("Not A+");
+    }
+    else if (marks >= 0 && marks < 33)
+    {
+        printf("Fail");
+    }
+    else
+    {
+        printf("Invalid marks");
+    }
+
+    return 0;
+}
